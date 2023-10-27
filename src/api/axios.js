@@ -1,6 +1,5 @@
 import axios from 'axios';
-
 export default axios.create({
-    // baseURL: 'https://bookstore-api-service.onrender.com/api',
-        baseURL: 'http://localhost:8081/api',
+    baseURL: `${process.env.REACT_APP_BASE_URL}/api`,
+    // baseURL: 'http://localhost:8081/api',
 });
