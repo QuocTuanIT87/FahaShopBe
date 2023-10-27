@@ -1,0 +1,132 @@
+a {
+    text-decoration: none;
+}
+.header {
+    width: 100vw;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer {
+    background-color: #fff;
+    border-top: 4px solid #d0011c;
+    padding-top: 60px;
+    max-width: 100%;
+}
+.footer__heading {
+    font-size: 1rem;
+
+    margin-bottom: 30px;
+}
+.footer-list {
+    list-style: none;
+    position: relative;
+    left: 2px;
+    margin-left: -32px;
+}
+.footer-item-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #757575;
+    margin: 16px 0;
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+        color: #ee4d2d;
+        font-weight: bold;
+    }
+}
+.footer-item-link .special-item {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #757575;
+    margin: 2px 0;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    bottom: 18px;
+    left: 24px;
+}
+.footer-about-me {
+    // padding: 40px 0;
+    text-align: center;
+}
+
+.footer-about-me-list {
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    // margin-bottom: 30px;
+}
+.footer-about-me-list a {
+    text-decoration: none;
+    color: #000000;
+    margin: 4px;
+    display: inline-block;
+    transform: scale(1);
+    transition-duration: 0.4s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.footer-power p {
+    font-size: 1.6rem;
+}
+.footer-power > p > a {
+    text-decoration: none;
+}
+
+.footer-pay {
+    position: relative;
+    bottom: 16px;
+    // right: 12px;
+    // margin-right: 4px;
+}
+
+.footer-pay .footer-pay-img {
+    width: 220px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-ship {
+    position: relative;
+    bottom: 20px;
+    right: 12px;
+}
+
+.footer-ship .footer-ship-img {
+    width: 220px;
+}
+
+.footer-download {
+    position: relative;
+    bottom: 28px;
+    right: 20px;
+}

@@ -1,0 +1,698 @@
+.containerPay {
+    background-color: #ccc;
+    max-width: 100%;
+    // margin-top: 32px;
+    padding-top: 20px;
+
+    .delivery-address {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 4px;
+        width: 1200px;
+        margin: auto;
+        margin-bottom: 14px;
+
+        .wrapper-address-delivery {
+            padding: 32px;
+
+            .cover-detail-address {
+                display: flex;
+                align-items: center;
+                padding-bottom: 10px;
+                cursor: pointer;
+                position: relative;
+
+                .cover-edit-delete {
+                    position: absolute;
+                    right: 0;
+                    .btn-edit-address {
+                        border: none;
+                        background-color: transparent;
+                        color: #007bff;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+
+                    .btn-delete-address {
+                        border: none;
+                        background-color: transparent;
+                        color: #007bff;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        margin-left: 8px;
+                    }
+                }
+
+                .form-address {
+                    display: none;
+                }
+
+                input[type='radio']:checked + .detail-address-delivery::before {
+                    height: 20px;
+                    width: 20px;
+                    background-color: #fff;
+                    border: 6px solid #c92127;
+                }
+
+                .detail-address-delivery {
+                    width: 100%;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    user-select: none;
+                }
+
+                .detail-address-delivery::before {
+                    content: '';
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    border: 2px solid #ccc;
+                }
+            }
+        }
+
+        .detail-address-delivery {
+            color: #000;
+            font-size: 1rem;
+            max-width: 68%;
+        }
+
+        .info-delivery {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            border-bottom: 1px solid #eee;
+            .left-info {
+                li {
+                    margin-bottom: 16px;
+                    margin-right: 60px;
+                    color: #000;
+                    list-style-type: none;
+                    font-size: 1rem;
+                }
+            }
+            .right-info {
+                li {
+                    margin-bottom: 16px;
+                    margin-right: 60px;
+                    color: #000;
+                    list-style-type: none;
+                    font-size: 1rem;
+                }
+            }
+            .img-delivery {
+                display: flex;
+                width: 180px;
+                position: absolute;
+                right: 20%;
+                bottom: 50%;
+                transform: translateY(50%);
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .method-delivery {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 4px;
+        width: 1200px;
+
+        margin: auto;
+        margin-bottom: 14px;
+        .info-method {
+            margin-left: 30px;
+        }
+
+        .wrapper-address-delivery {
+            padding: 0px 32px 32px;
+
+            .cover-detail-address {
+                display: flex;
+                align-items: center;
+                padding-bottom: 10px;
+                cursor: pointer;
+                position: relative;
+
+                .cover-edit-delete {
+                    position: absolute;
+                    right: 0;
+                    .btn-edit-address {
+                        border: none;
+                        background-color: transparent;
+                        color: #007bff;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+
+                    .btn-delete-address {
+                        border: none;
+                        background-color: transparent;
+                        color: #007bff;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        margin-left: 8px;
+                    }
+                }
+
+                .form-address {
+                    display: none;
+                }
+
+                input[type='radio']:checked + .detail-address-delivery::before {
+                    height: 20px;
+                    width: 20px;
+                    background-color: #fff;
+                    border: 6px solid #c92127;
+                }
+
+                .detail-address-delivery {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    user-select: none;
+                    color: #000;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    min-width: 220px;
+                }
+
+                span {
+                    color: #000;
+                    font-size: 0.9rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                .detail-address-delivery::before {
+                    content: '';
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    border: 2px solid #ccc;
+                }
+            }
+        }
+    }
+    .method-pay {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 4px;
+        width: 1200px;
+        height: 120px;
+        margin: auto;
+        margin-bottom: 14px;
+        .info-method-pay {
+            margin-left: 30px;
+        }
+    }
+    .discout {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 4px;
+        width: 1200px;
+        height: 120px;
+        margin: auto;
+        margin-bottom: 14px;
+
+        .info-discout {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            p {
+                margin-left: 30px;
+            }
+            .input {
+                display: flex;
+                border-radius: 10px;
+                border: 1px solid #ccc;
+                width: 500px;
+                padding: 8px 106px 8px 16px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+            .apply {
+                display: flex;
+                align-items: center;
+                .apply-btn {
+                    border-color: #ee4d2d;
+                    background-color: #ee4d2d;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 94px;
+                    height: 30px;
+                    margin-bottom: 19px;
+                    margin-left: -100px;
+
+                    &:hover {
+                        border-color: #ee4d2d;
+                        background-color: #fff;
+                        color: #ee4d2d;
+                    }
+                }
+            }
+            .discout-btn {
+                margin-left: 20px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .check {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 4px;
+        width: 1200px;
+        height: inherit;
+        margin: auto;
+        border-bottom: 4px solid #ccc;
+        .product-order {
+            display: flex;
+            flex-direction: row;
+            margin-left: 40px;
+            margin-bottom: 24px;
+            max-width: 1100px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            .info-check {
+                min-width: 300px;
+                max-width: 400px;
+            }
+
+            img {
+                width: 140px;
+                height: 160px;
+            }
+            .check-right {
+                display: flex;
+                margin-left: 20%;
+                .temporary {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 100px;
+                    span {
+                        color: #8e8a8a;
+                        text-decoration: line-through;
+                        margin-top: -10px;
+                    }
+                }
+                .quantity {
+                    margin-right: 120px;
+                }
+                .total {
+                    color: #ed722f;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.pay-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    width: 100%;
+    z-index: 999;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+    .pay-inner {
+        min-width: 1280px;
+        margin: 0 auto;
+
+        .cover-check-money {
+            text-align: right;
+            .book-total-money {
+                margin-bottom: 0;
+                padding: 2px 0;
+                font-size: 1.1rem;
+
+                .detail-total-money {
+                    min-width: 180px;
+                    display: inline-block;
+                }
+
+                .total-all-money {
+                    min-width: 180px;
+                    display: inline-block;
+                    color: #fa0001;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .line1 {
+            width: 100%;
+            border: 1px solid #bbb;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .done {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            .back-btn {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                border: none;
+                margin-left: 160px;
+                a {
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding-left: 8px;
+                }
+            }
+            .total-total {
+                margin-left: 500px;
+                .total-text {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #ee4d2d;
+                }
+            }
+            .confirm-btn {
+                border-color: #ee4d2d;
+                background-color: #ee4d2d;
+                padding: 8px 54px;
+                margin: 18px 0 18px auto;
+                font-weight: bold;
+                &:hover {
+                    border-color: #ee4d2d;
+                    background-color: #fff;
+                    color: #ee4d2d;
+                }
+                span {
+                    font-family: 'nunito-sans', sans-serif, Helvetica, Arial;
+                }
+            }
+        }
+    }
+}
+
+.line {
+    width: 95%;
+    border: 1px solid #ccc;
+    margin-top: -10px;
+    margin-bottom: 18px;
+    margin-left: 32px;
+}
+p {
+    font-size: 16px;
+}
+.h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #333333;
+    padding: 16px 16px 16px 32px;
+    font-weight: bold;
+    // margin-right: 16px;
+}
+
+// start Modal Promotion
+.modal-promotion-wrapper {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    z-index: 99999;
+}
+
+.modal-promotion-wrapper.hidden {
+    display: none;
+    animation: hideModalPromotion ease-in-out 0.3s;
+}
+
+.modal-promotion-wrapper.active {
+    display: flex;
+    animation: showModalPromotion ease-in-out 0.2s;
+}
+
+@keyframes showModalPromotion {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hideModalPromotion {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.modal-promotion-container {
+    background-color: #fff;
+    width: 550px;
+    max-width: calc(100% - 32px);
+    border-radius: 8px;
+    position: relative;
+
+    .close-modal-promotion {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ccc;
+        font-size: 1.4rem;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        line-height: 60px;
+        text-align: center;
+        &:hover {
+            color: #000;
+        }
+    }
+
+    .modal-promotion-header {
+        box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 8px 8px 0 0;
+        padding: 16px;
+        .title-promotion-header {
+            color: #2f80ed;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}
+
+.modal-promotion-inner {
+    padding: 16px;
+}
+
+.cover-input-promotion {
+    display: flex;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    .form-promotion {
+        width: 100%;
+        flex: 8;
+        border: none;
+        outline: none;
+        padding: 0 10px;
+        font-weight: bold;
+
+        &::placeholder {
+            font-weight: bold;
+            color: #ccc;
+        }
+    }
+
+    .apply-promotion-btn-top {
+        flex: 2;
+        border: none;
+        border-radius: 8px;
+        padding: 4px 2px;
+        font-weight: bold;
+        color: #fff;
+        background: #2f80ed;
+
+        &:hover {
+            color: #2f80ed;
+            background: #fff;
+            border: 1px solid #2f80ed;
+        }
+    }
+}
+
+.modal-promotion-content {
+    max-height: 480px;
+    overflow-y: auto;
+    .title-content {
+        font-weight: bold;
+    }
+}
+
+.cover-promotion-ticket {
+    margin-bottom: 18px;
+    .inner-promotion-ticket {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: flex;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        min-height: 146px;
+        position: relative;
+        margin: 0 5px;
+        &:hover {
+            border: 2px solid #2f80ed;
+            cursor: pointer;
+        }
+
+        .left-promotion-ticket {
+            padding: 10px;
+            flex: 3;
+
+            .voucher-img {
+                width: 100%;
+                border-radius: 4px;
+            }
+        }
+
+        .right-promotion-ticket {
+            padding: 10px;
+            flex: 7;
+
+            .title-right-promotion {
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+
+            .sub-title-promotion {
+                color: #7a7e7f;
+                font-size: 14px;
+            }
+
+            .apply-promotion-btn-bottom {
+                position: absolute;
+                bottom: 6px;
+                right: 6px;
+                border: none;
+                border-radius: 8px;
+                padding: 4px 26px;
+                font-weight: bold;
+                color: #fff;
+                background: #2f80ed;
+
+                &:hover {
+                    color: #2f80ed;
+                    background: #fff;
+                    border: 1px solid #2f80ed;
+                }
+            }
+        }
+    }
+}
+
+// End Modal Promotion
+
+// Start Modal Edit address
+
+.modal-edit-address-wrapper {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: showModalPromotion ease-in-out 0.3s;
+}
+
+.modal-edit-address-container {
+    width: 600px;
+    max-width: calc(100% - 32px);
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+
+    .btn-modal-save-address {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 18px;
+        font-size: 1rem;
+        border: none;
+        font-weight: bold;
+        background-color: #c92127;
+        color: #fff;
+        border-radius: 4px;
+        padding: 8px 38px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .btn-modal-cancel-address {
+        margin: 0 auto;
+        display: block;
+        font-size: 1rem;
+        border: none;
+        font-weight: bold;
+        background-color: #fff;
+        border: 1px solid #c92127;
+        border-radius: 4px;
+        color: #c92127;
+        padding: 6px 60px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .title-edit-address {
+        color: #f7941e;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .cover-item-address-input {
+        display: flex;
+        margin-bottom: 20px;
+        .label-input-address {
+            margin-bottom: 0;
+            min-width: 200px;
+        }
+
+        .form-edit-address {
+            outline: none;
+            padding: 3px 16px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .form-edit-address::placeholder {
+            color: #ccc;
+            font-weight: 100;
+        }
+    }
+}
+
+// End Modal Edit address
